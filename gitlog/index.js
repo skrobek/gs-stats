@@ -153,6 +153,7 @@ function createCommandArguments(options) {
 
   if (options.includeMergeCommitFiles) {
     command.push("-m");
+    command.push("--first-parent")
   }
 
   command.push("-n " + options.number);
